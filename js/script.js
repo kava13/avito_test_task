@@ -307,3 +307,4 @@ searchButton.addEventListener('click', (event) => {
     new API().getStartResult().then(createPagination);
     
 })
+
