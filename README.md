@@ -2,8 +2,7 @@
 
 Для запуска в директории с проектом введите:
 
-npm install
-
-npm start
+```npm install
+npm start```
 
 Перейдите по адресу http://localhost:8000/
