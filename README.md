@@ -7,4 +7,4 @@ npm install
 npm start
 ```
 
-Перейдите по адресу http://localhost:8000/
+И перейдите по адресу http://localhost:8000/
