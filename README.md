@@ -2,7 +2,8 @@
 
 Для запуска в директории с проектом введите:
 
-```npm install
+```
+npm install
 npm start
 ```
 
