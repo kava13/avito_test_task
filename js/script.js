@@ -262,7 +262,7 @@ paginationWrapper.addEventListener('click', (event) => {
 
         }
 
-        pagItems = document.querySelectorAll('.pagination-wrapper__item');
+        let pagItems = document.querySelectorAll('.pagination-wrapper__item');
 
         // Делаем выбранную страницу активной
         pagItems.forEach((element) => {
