@@ -1,3 +1,5 @@
+import { API } from './api.js'
+
 let repoTitle = document.querySelector('.repo__title'),
 userImg = document.querySelector('.repo__img img'),
 userNickname = document.querySelector('.repo__nickname'),
@@ -6,37 +8,6 @@ userStars = document.querySelector('.repo-stars'),
 userDescription = document.querySelector('.repo-description'),
 userContributorsHeader = document.querySelector('.repo-contributors__header'),
 userContributorsList = document.querySelector('.repo-contributors__list');
-
-
-
-const API = class {
-
-    constructor() {
-
-        this.URL = 'https://api.github.com';
-        this.USER_PER_PAGE = 10;
-
-    }
-
-    getData = async (url) => {
-
-        const res = await fetch(url);
-
-        if (res.ok) {
-            return res.json();
-        } else {
-            throw new Error(`Not enought data from : ${url}`);
-        }
-    }
-
-    getContributorsResult = (repoPath) => {
-
-        return this.getData(`${this.URL}/repos/${repoPath}/contributors`);
-
-    }
-
-}
-
 
 let repoData = JSON.parse(localStorage.getItem('repoInfo'));
 
