@@ -1,12 +1,31 @@
-# avito_test_task
 
-Для запуска приложения в директории с проектом введите:
+## Тестовое задание Avito: GitHub Dashboard
 
-```
-npm install
-npm start
-```
+> Ссылка на задание: [https://github.com/avito-tech/pro-fe-trainee-task/blob/master/README.md](https://github.com/avito-tech/pro-fe-trainee-task/blob/master/README.md)
 
-И перейдите по адресу http://localhost:8000/
 
-*Стоит отметить, что я очень буквально отнесся к фразе "проект должен состоять из двух страниц", поэтому у меня в действительности 2 html файла. Возможно, в данном контексте это выглядит немного нелепо
+## Используемые технологии
+* **React** для реактивного манипулирования DOM деревом
+* **Redux + RTK** для логики состояния приложения
+* **Redux-thunk** для ассинхронных _actions_
+* **React-redux + hooks** биндинг для redux + мемоизированные селекторы
+
+## Запуск
+
+    git clone https://github.com/ValeriiMakhniuk/avito-github-dashboard.git
+    cd avito-github-dashboard
+    npm install
+    npm start
+
+## Возможности
+
+1. При незаполненном поле поиска отображаются топ 10 репоизториев по кол-ву звезд
+2. Хранение последнего поискового запроса + страницы в `localStorage`
+3. Удобный интерфейс поиска GitHub репозиториев и просмотра детальной информации по репозиторию
+
+## TO-DO
+
+ - [x] **React-router**: для возмности сохранения закладок и навигирования
+ - [ ] Сохранение выбранной страницы в пагинации в `localStorage` _with throttle()_
+ - [ ] **CSS variables**: для переиспользования цветовой схемы и размера
+...
